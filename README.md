@@ -1,1 +1,1 @@
-sk-ek.github.com
+sk-ek.github.io
