@@ -1,4 +1,10 @@
-document.querySelector("form").onsubmit = function(){
-    let name_xd = document.querySelector("#name").value;
-    alert(name_xd + " DEEZ NUTS");
-};
+let header = document.querySelector("#header");
+document.querySelector("#red").onclick = function(){
+    header.style.color = "red";
+}
+document.querySelector("#blue").onclick = function(){
+    header.style.color = "blue";
+}
+document.querySelector("#green").onclick = function(){
+    header.style.color = "green";
+}
