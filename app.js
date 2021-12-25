@@ -1,10 +1,5 @@
-let header = document.querySelector("#header");
-document.querySelector("#red").onclick = function(){
-    header.style.color = "red";
-}
-document.querySelector("#blue").onclick = function(){
-    header.style.color = "blue";
-}
-document.querySelector("#green").onclick = function(){
-    header.style.color = "green";
-}
+document.querySelectorAll("button").forEach(function(button){
+    button.onclick = function(){
+        document.querySelector("#header").style.color = button.dataset.color;
+    }
+})
