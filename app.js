@@ -1,5 +1,10 @@
-document.querySelectorAll("button").forEach(function(button){
-    button.onclick = function(){
-        document.querySelector("#header").style.color = button.dataset.color;
-    }
-})
+document.querySelector("form").onsubmit = () => {
+    const task = document.querySelector("#task").value;
+    const li = document.createElement("li");
+    li.innerHTML = task;
+    document.querySelector("#tasks").append(li);
+
+    document.querySelector("task").value = "";
+
+    return false;
+}
