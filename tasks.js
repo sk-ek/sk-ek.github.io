@@ -21,5 +21,7 @@ document.querySelector("form").onsubmit = function(){
 
     document.querySelector("ul").append(li);
 
+    document.querySelector("#task").value = "";
+
     return false;
 }
